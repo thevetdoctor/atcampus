@@ -3,7 +3,9 @@ import AppLayout from 'components/AppLayout';
 import FlatButton from 'components/FlatButton';
 import GradientButton from 'components/GradientButton';
 import TextInputField from 'components/TextInputField';
+import TopSearch from '../components/TopSearch';
 import Head from 'next/head'
+import Tabs from '../components/Tabs';
 
 export default function HomePage() {
     return (
@@ -14,13 +16,9 @@ export default function HomePage() {
             <main className="m-4">
                 <h1 className="text-xl lg:text-2xl">atcampus components</h1>
 
-                <div className="mt-8">
-                    <h2 className="text-lg lg:text-xl">Gradient Button</h2>
+                <TopSearch />
+                <Tabs />
 
-                    <GradientButton as={'button'}>
-                        Text goes here
-                    </GradientButton>
-                </div>
                 <div className="mt-8">
                     <h2 className="text-lg lg:text-xl">Flat Button</h2>
 
